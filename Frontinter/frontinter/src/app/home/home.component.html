@@ -1,0 +1,32 @@
+<div class="home-container">
+    <h1 class="welcome-title">Bienvenido, {{ usuario?.nombre }}</h1>
+  
+    <div *ngIf="datosTabla.length! > 0; else noData">
+      <h2 class="table-title">Lista de Materias del Estudiante</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Estudiante</th>
+            <th>Materia</th>
+            <th>Profesor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let dato of datosTabla">
+            <td>{{ dato.estudiante }}</td>
+            <td>{{ dato.curso }}</td>
+            <td>{{ dato.nombre_Profesor }}</td>
+            <td><input type="submit" value="Eliminar Materia" class="btn" (click)="EliminarMateria(dato.id_materia)" /></td> <!-- Cambiado a nombre_Profesor -->
+          </tr>
+        </tbody>
+      </table>
+      <div class="button-container">
+        <input type="submit" value="Agregar Materias" class="btn" (click)="Agregarmateria()" />
+      </div>
+    </div>
+  
+    <ng-template #noData>
+      <p>No se encontraron datos para mostrar.</p>
+    </ng-template>
+  </div>
+  

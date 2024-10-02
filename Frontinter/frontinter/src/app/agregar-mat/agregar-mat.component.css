@@ -1,0 +1,87 @@
+.courses-container {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Color de fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .courses-title,
+  .details-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrar el título */
+  }
+  
+  .courses-list {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+  }
+  
+  .courses-list li {
+    margin: 0.5rem 0; /* Margen entre los elementos */
+  }
+  
+  .course-button {
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor tipo puntero */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+    width: 100%; /* Botón de ancho completo */
+  }
+  
+  .course-button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+  }
+  
+  .no-courses-text,
+  .no-data-text {
+    text-align: center; /* Centrar texto de no datos */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #666; /* Color gris */
+  }
+  
+  .details-table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Colapsar bordes de la tabla */
+    margin-top: 1.5rem; /* Margen superior */
+  }
+  
+  thead {
+    background-color: #28a745; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+  }
+  
+  th, td {
+    padding: 0.75rem; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde de las celdas */
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+  
+  td {
+    background-color: #ffffff; /* Color de fondo de las celdas */
+  }
+  
+  td:nth-child(even) {
+    background-color: #f2f2f2; /* Color alternativo para las filas */
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    background-color: #28a745; /* Color de fondo verde */
+    color: #ffffff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor tipo puntero */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+  }
+  
+  .btn:hover {
+    background-color: #218838; /* Color más oscuro al pasar el ratón */
+  }
+  

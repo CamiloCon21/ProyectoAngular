@@ -1,0 +1,48 @@
+<div class="courses-container">
+    <div *ngIf="materias.length > 0; else noCourses">
+      <h2 class="courses-title">Lista de Cursos Disponibles</h2>
+      <ul class="courses-list">
+        <li *ngFor="let materia of materias">
+          <button class="course-button" (click)="matprof(materia.id_materia)">{{ materia.curso }}</button>
+        </li>
+      </ul>
+    </div>
+  
+    <ng-template #noCourses>
+      <p class="no-courses-text">No se encontraron cursos disponibles.</p>
+    </ng-template>
+  
+    <!-- Tabla para mostrar los detalles de la materia seleccionada -->
+    <div *ngIf="datosTabla.length > 0; else noData">
+      <h2 class="details-title">Detalles de la Materia</h2>
+      <table class="details-table">
+        <thead>
+          <tr>
+            <th>Curso</th>
+            <th>Nombre del Profesor</th>
+            <th>Créditos</th>
+            <th>Agregar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let dato of datosTabla">
+            <td>{{ dato.materia }}</td>
+            <td>{{ dato.profesor }}</td>
+            <td>{{ dato.creditos }}</td>
+            <td>
+              <button (click)="AgregarMateria(dato.id_materia)" class="btn">Agregar Materia</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+    <ng-template #noData>
+      <p class="no-data-text">Seleccione un curso para ver más detalles.</p>
+    </ng-template>
+    
+    <!-- Mensaje de éxito o error -->
+    <div *ngIf="mensaje" class="alert">
+      {{ mensaje }}
+    </div>
+</div>

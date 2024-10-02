@@ -1,0 +1,22 @@
+<div class="login-container">
+    <form [formGroup]="form" (ngSubmit)="ingresoUsuario($event)" class="login-form">
+      <h2 class="login-title">Iniciar Sesión</h2>
+      
+      <div class="input-group">
+        <label for="usuario">Usuario</label>
+        <input id="usuario" formControlName="usuario" placeholder="Ingrese su usuario" />
+      </div>
+      
+      <div class="input-group">
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" formControlName="contraseña" placeholder="Ingrese su contraseña" />
+      </div>
+      
+      <button type="submit" class="login-button">Iniciar Sesión</button>
+  
+      <div class="footer-text">
+        <p>¿No tienes cuenta? <a routerLink="/registro">Regístrate aquí</a></p>
+      </div>
+    </form>
+  </div>
+  

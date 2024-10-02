@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Color de fondo claro */
+  }
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background: linear-gradient(135deg, #6e7f80 0%, #d4d8d9 100%); /* Degradado de fondo */
+  }
+  
+  .login-form {
+    background-color: #ffffff; /* Fondo blanco para el formulario */
+    padding: 2rem;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 300px; /* Ancho fijo del formulario */
+  }
+  
+  .login-title {
+    margin-bottom: 1.5rem;
+    text-align: center; /* Centrar el título */
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .input-group {
+    margin-bottom: 1.5rem; /* Espaciado entre los campos de entrada */
+  }
+  
+  .input-group label {
+    display: block; /* Etiquetas como bloques */
+    margin-bottom: 0.5rem; /* Espaciado debajo de la etiqueta */
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    width: 100%; /* Campos de entrada a ancho completo */
+    padding: 0.5rem;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    transition: border-color 0.3s; /* Transición de color de borde */
+  }
+  
+  .input-group input:focus {
+    border-color: #007bff; /* Borde azul al enfocar */
+    outline: none; /* Sin contorno */
+  }
+  
+  .login-button {
+    width: 100%; /* Botón a ancho completo */
+    padding: 0.5rem;
+    background-color: #007bff; /* Color de fondo azul */
+    color: #ffffff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor tipo puntero */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+  }
+  
+  .footer-text {
+    text-align: center; /* Centrar texto de pie de página */
+    margin-top: 1rem; /* Espaciado superior */
+  }
+  
+  .footer-text a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .footer-text a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+  }
+  

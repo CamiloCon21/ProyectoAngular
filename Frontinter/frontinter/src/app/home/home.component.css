@@ -1,0 +1,71 @@
+.home-container {
+    padding: 2rem;
+    background-color: #f9f9f9; /* Color de fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .welcome-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrar el título */
+  }
+  
+  .table-title {
+    margin-bottom: 1rem;
+    text-align: center; /* Centrar el título de la tabla */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+  }
+  
+  table {
+    width: 100%; /* Ancho completo de la tabla */
+    border-collapse: collapse; /* Colapsar bordes de la tabla */
+  }
+  
+  thead {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: white; /* Color del texto del encabezado */
+  }
+  
+  th, td {
+    padding: 0.75rem; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde de las celdas */
+    text-align: left; /* Alinear texto a la izquierda */
+  }
+  
+  td {
+    background-color: #ffffff; /* Color de fondo de las celdas */
+  }
+  
+  td:nth-child(even) {
+    background-color: #f2f2f2; /* Color alternativo para las filas */
+  }
+  
+  .button-container {
+    text-align: center; /* Centrar el botón */
+    margin-top: 1rem; /* Espaciado superior */
+  }
+  
+  .btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #28a745; /* Color de fondo verde */
+    color: #ffffff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor tipo puntero */
+    transition: background-color 0.3s; /* Transición de color de fondo */
+  }
+  
+  .btn:hover {
+    background-color: #218838; /* Color más oscuro al pasar el ratón */
+  }
+  
+  p {
+    text-align: center; /* Centrar texto de no datos */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #666; /* Color gris */
+  }
+  
